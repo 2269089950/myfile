@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"ledlamp\startup_stm32f103xb.o"
+"ledlamp\main.o"
+"ledlamp\gpio.o"
+"ledlamp\stm32f1xx_it.o"
+"ledlamp\stm32f1xx_hal_msp.o"
+"ledlamp\stm32f1xx_hal_gpio_ex.o"
+"ledlamp\stm32f1xx_hal_tim.o"
+"ledlamp\stm32f1xx_hal_tim_ex.o"
+"ledlamp\stm32f1xx_hal.o"
+"ledlamp\stm32f1xx_hal_rcc.o"
+"ledlamp\stm32f1xx_hal_rcc_ex.o"
+"ledlamp\stm32f1xx_hal_gpio.o"
+"ledlamp\stm32f1xx_hal_dma.o"
+"ledlamp\stm32f1xx_hal_cortex.o"
+"ledlamp\stm32f1xx_hal_pwr.o"
+"ledlamp\stm32f1xx_hal_flash.o"
+"ledlamp\stm32f1xx_hal_flash_ex.o"
+"ledlamp\stm32f1xx_hal_exti.o"
+"ledlamp\system_stm32f1xx.o"
+--strict --scatter "LEDLAMP\LEDLAMP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LEDLAMP.map" -o LEDLAMP\LEDLAMP.axf
